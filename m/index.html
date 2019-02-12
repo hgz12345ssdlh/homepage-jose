@@ -6,9 +6,9 @@
     <meta charset="utf-8" />
     <title>Jose - Home</title>
     <meta name="Keywords" content="个人主页 Jose Homepage 博客 Blogs 笔记 Notes 资源 Resources">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="shortcut icon" href="icon/favicon.ico" type="image/vnd.microsoft.icon" />
-    <link rel="icon" href="icon/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="stylesheet" type="text/css" href="../css/mobile.css">
+    <link rel="shortcut icon" href="../icon/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="icon" href="../icon/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -17,74 +17,57 @@
   <!-- Body -->
   <body>
     <script type="text/javascript">
-      if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        window.location.href = "m/";
+      if (!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        window.location.href = "../";
       }
     </script>
 
-    <!-- Side menu -->
-    <div class="sidemenu">
+    <!-- Top menu -->
+    <div class="topmenu">
 
-      <!-- Side menu head -->
-      <div class="sidemenu-head">
-        <img class="name-logo" src="icon/name-logo.png" alt="" onclick="location.href='index.html'">
+      <!-- Top menu head -->
+      <div class="topmenu-head">
+        <img class="name-logo" src="../icon/name-logo.png" alt="" onclick="location.href='index.html'">
         <div class="overlay"></div>
-        <img class="avatar" src="img/avatar.jpg" alt="">
+        <img class="avatar" src="../img/avatar.jpg" alt="">
       </div>
 
-      <!-- Side menu information section -->
-      <div class="sidemenu-info">
-        <table>
-          <tr><th class="eng-name">Jose Hu</th></tr>
-          <tr><th class="chn-name">胡冠洲</th></tr>
-          <tr><td>"Dream hard, work hard."</td></tr>
-        </table>
+      <!-- Top menu title -->
+      <div class="topmenu-title">
+        <div class="title-icon"><img src="../icon/home.png" alt=""></div>
+        <div class="title-name">主页<br />Homepage</div>
       </div>
 
-      <!-- Side menu navigation list -->
-      <div class="sidemenu-nav">
-        <table>
-          <tr>
-            <td class="fill"></td>
-            <td class="word" onclick="location.href='index.html'" style="color: #154360">&nbsp; 主页 &nbsp; Home</td>
-            <td class="arrow"><img src="icon/arrow.png"></td>
-          </tr>
-          <tr>
-            <td class="fill"></td>
-            <td class="word" onclick="location.href='notes.html'">&nbsp; 笔记 &nbsp; Notes</td>
-          </tr>
-          <tr>
-            <td class="fill"></td>
-            <td class="word" onclick="location.href='resources.html'">&nbsp; 资源 &nbsp; Resources</td>
-          </tr>
-          <tr>
-            <td class="fill"></td>
-            <td class="word" onclick="location.href='blogs.html'">&nbsp; 博客 &nbsp; Blogs</td>
-          </tr>
-        </table>
-      </div>
-
-      <!-- Side menu find-me -->
-      <div class="sidemenu-find">
-        <table>
-          <tr>
-            <td><a class="weibo" target="_blank" href="https://www.weibo.com/1375339113/profile?topnav=1&wvr=6" title="微博"></a></td>
-            <td><a class="douban" target="_blank" href="https://www.douban.com/people/141206602" title="豆瓣"></a></td>
-            <td><a class="facebook" target="_blank" href="https://www.facebook.com/hgz12345ssdlh" title="Facebook"></td>
-            <td><a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hu-guan-zhou-38/activities" title="知乎"></a></td>
-            <td><a class="github" target="_blank" href="https://github.com/hgz12345ssdlh" title="GitHub"></a></td>
-            <td><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/josehu/" title="LinkedIn"></a></td>
-          </tr>
-        </table>
-      </div>
+      <!-- Top menu navigation button -->
+      <button class="topmenu-nav">
+        <img src="../icon/menu.png" alt="">
+      </button>
 
     </div>
 
-    <!-- Page title -->
-    <div class="content-head">
-      <img src="icon/home.png" alt="">
+    <!-- Navigation list -->
+    <div class="nav-toggle">
+      <div class="up-triangle"></div>
+      <ul>
+        <li onclick="location.href='index.html'">
+          <div class="icon"><img src="../icon/home.png" alt=""></div>
+          <div class="name">主页 Homepage</div>
+        </li>
+        <li onclick="location.href='notes.html'">
+          <div class="icon"><img src="../icon/notes.png" alt=""></div>
+          <div class="name">笔记 Notes</div>
+        </li>
+        <li onclick="location.href='resources.html'">
+          <div class="icon"><img src="../icon/resources.png" alt=""></div>
+          <div class="name">资源 Resources</div>
+        </li>
+        <li onclick="location.href='blogs.html'">
+          <div class="icon"><img src="../icon/blogs.png" alt=""></div>
+          <div class="name">博客 Blogs</div>
+        </li>
+      </ul>
     </div>
-      
+
     <!-- Main content -->
     <div class="content-main">
 
@@ -97,15 +80,15 @@
           <div id="chn-name">胡冠洲</div>
           <div id="major">Computer Science and Technology</div>
           <div id="school">ShanghaiTech University</div>
-          <div id="pdf-button" onclick="window.open('files/CV.pdf')">CV</div>
+          <div id="pdf-button" onclick="window.open('../files/CV.pdf')">CV</div>
           <div id="ha-index">"<a href="https://www.irif.fr/~haberm/haindex.html" target="_blank">ha-index</a>": 80</div>
-          <div id="photo"><img src="img/photo.jpg" alt=""></div>
+          <div id="photo"><img src="../img/photo.jpg" alt=""></div>
         </div>
 
         <!-- CV introduction section -->
         <div id="cv-introduction"><hr />
           <div class="section-head">
-            <div class="section-icon"><img src="icon/intro-icon.png" alt=""></div>
+            <div class="section-icon"><img src="../icon/intro-icon.png" alt=""></div>
             <div class="section-title">个人简介 Introduction</div>
           </div>
           <div class="section-body">
@@ -116,7 +99,7 @@
         <!-- CV contacts section -->
         <div id="cv-contacts"><hr />
           <div class="section-head">
-            <div class="section-icon"><img src="icon/contacts-icon.png" alt=""></div>
+            <div class="section-icon"><img src="../icon/contacts-icon.png" alt=""></div>
             <div class="section-title">联系方式 Contact Info</div>
           </div>
           <div class="section-body">
@@ -139,7 +122,7 @@
         <!-- CV skills section -->
         <div id="cv-skills"><hr />
           <div class="section-head">
-            <div class="section-icon"><img src="icon/skills-icon.png" alt=""></div>
+            <div class="section-icon"><img src="../icon/skills-icon.png" alt=""></div>
             <div class="section-title">专业技能 Fields & Skills</div>
           </div>
           <div class="section-body">
@@ -166,13 +149,13 @@
         <!-- Links section -->
         <div id="cv-links"><hr />
           <div class="section-head">
-            <div class="section-icon"><img src="icon/links-icon.png" alt=""></div>
+            <div class="section-icon"><img src="../icon/links-icon.png" alt=""></div>
             <div class="section-title">相关链接 Links</div>
           </div>
           <div class="section-body">
             <table align="center"><tr>
               <td><a href="http://lion.sist.shanghaitech.edu.cn" target="_blank">L.I.O.N Lab</a></td>
-              <td><img src="img/LION.png" alt="" onclick="window.open('http://lion.sist.shanghaitech.edu.cn')"></td>
+              <td><img src="../img/LION.png" alt="" onclick="window.open('http://lion.sist.shanghaitech.edu.cn')"></td>
             </tr></table>
           </div>
         </div>
@@ -183,8 +166,28 @@
 
     <!-- Footer -->
     <footer>
-      <div class="timestamp"><a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备18071367号</a></div>
+
+      <!-- Footer fine-me -->
+      <div class="findme">
+        <table>
+          <tr>
+            <td><a class="weibo" target="_blank" href="https://www.weibo.com/1375339113/profile?topnav=1&wvr=6" title="微博"></a></td>
+            <td><a class="douban" target="_blank" href="https://www.douban.com/people/141206602" title="豆瓣"></a></td>
+            <td><a class="facebook" target="_blank" href="https://www.facebook.com/hgz12345ssdlh" title="Facebook"></td>
+            <td><a class="zhihu" target="_blank" href="https://www.zhihu.com/people/hu-guan-zhou-38/activities" title="知乎"></a></td>
+            <td><a class="github" target="_blank" href="https://github.com/hgz12345ssdlh" title="GitHub"></a></td>
+            <td><a class="linkedin" target="_blank" href="https://www.linkedin.com/in/josehu/" title="LinkedIn"></a></td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Footer timestampe -->
+      <div class="timestamp">
+        <a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备18071367号</a>
+      </div>
+
     </footer>
 
+    <script type="text/javascript" src="../js/navigate.js"></script>
   </body>
 </html>

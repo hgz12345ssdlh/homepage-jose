@@ -1,6 +1,6 @@
 /* Font settings. */
 body {
-  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "黑体", "Microsoft YaHei", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
+  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
   background-color: #ffffff;
 }
 
@@ -25,269 +25,312 @@ a:active {
   color: #ffd700;
 }
 
-div.sidemenu {
+div.topmenu {
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
-  width: 250px;
+  right: 0;
+  width: 100%;
+  height: 250px;
+  background-color: #ffffff;
 }
 
-div.sidemenu div.sidemenu-head {
+div.topmenu div.topmenu-head {
   position: absolute;
   top: 0;
   left: 0;
-  height: 250px;
-  width: 250px;
+  width: 440px;
+  height: 220px;
   border-radius: 0 0 15px 0;
   background-color: #696969;
 }
 
-div.sidemenu div.sidemenu-head img.name-logo {
+div.topmenu div.topmenu-head img.name-logo {
   position: absolute;
-  top: 50px;
-  left: 40px;
-  height: 80px;
-  width: 170px;
+  top: 35px;
+  left: 50px;
+  width: 280px;
+  height: 150px;
   cursor: pointer;
 }
 
-div.sidemenu div.sidemenu-head div.overlay {
+div.topmenu div.topmenu-head div.overlay {
   position: absolute;
-  top: 190px;
-  left: 65px;
-  width: 120px;
-  height: 120px;
+  top: 40px;
+  left: 370px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   background-color: #ffffff;
 }
 
-div.sidemenu div.sidemenu-head img.avatar {
+div.topmenu div.topmenu-head img.avatar {
   position: absolute;
-  top: 200px;
-  left: 75px;
-  width: 100px;
-  height: 100px;
+  top: 50px;
+  left: 380px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
 }
 
-div.sidemenu div.sidemenu-info {
+div.topmenu div.topmenu-title {
+  position: fixed;
+  top: 0;
+  left: 510px;
+  right: 220px;
+  height: 220px;
+}
+
+div.topmenu div.topmenu-title div.title-icon {
   position: absolute;
-  top: 300px;
+  top: 10px;
   left: 0;
-  width: 250px;
-  height: 120px;
-}
-
-div.sidemenu div.sidemenu-info table {
-  margin: auto;
-}
-
-div.sidemenu div.sidemenu-info table th.eng-name {
-  text-align: center;
-  font-size: 30px;
-  color: #1f618d;
-}
-
-div.sidemenu div.sidemenu-info table th.chn-name {
-  text-align: center;
-  font-size: 20px;
-  color: #1f618d;
-}
-
-div.sidemenu div.sidemenu-info table td {
-  padding-top: 12px;
-  text-align: center;
-  font-size: 19px;
-  color: #808080;
-}
-
-div.sidemenu div.sidemenu-nav {
-  position: absolute;
-  top: 425px;
-  left: 0;
-  width: 250px;
-  height: 270px;
-}
-
-div.sidemenu div.sidemenu-nav table {
-  border-style: none;
-  border-width: 0;
   width: 100%;
+  height: 110px;
+  text-align: center;
 }
 
-div.sidemenu div.sidemenu-nav table td {
-  padding: 4px;
-  text-align: left;
+div.topmenu div.topmenu-title div.title-icon img {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  left: 35%;
+  right: 35%;
+  width: 30%;
+  height: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+div.topmenu div.topmenu-title div.title-name {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #484848;
+  text-align: center;
   vertical-align: middle;
-  font-size: 19px;
-  color: #1f618d;
 }
 
-div.sidemenu div.sidemenu-nav table td.fill {
-  width: 40px;
-}
-
-div.sidemenu div.sidemenu-nav table td.word {
-  width: 185px;
-  padding-left: 12px;
+div.topmenu button.topmenu-nav {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 140px;
+  height: 140px;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  background-color: #808080;
   cursor: pointer;
   transition: 0.3s;
 }
 
-div.sidemenu div.sidemenu-nav table td.word:hover {
-  background-color: #fff8dc;
-}
-
-div.sidemenu div.sidemenu-nav table td.arrow {
-  width: 25px;
-}
-
-div.sidemenu div.sidemenu-nav table img {
-  width: 15px;
-  height: 20px;
-  text-align: right;
-  vertical-align: middle;
-  float: right;
-}
-
-div.sidemenu div.sidemenu-find {
+div.topmenu button.topmenu-nav img {
   position: absolute;
-  bottom: 35px;
+  top: 22%;
+  left: 22%;
+  width: 56%;
+  height: 56%;
+}
+
+div.topmenu button.topmenu-nav.active {
+  background-color: #696969;
+}
+
+div.nav-toggle {
+  position: fixed;
+  top: 220px;
   left: 0;
-  width: 250px;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  z-index: -2;
+  background-color: #ffffff;
+  transition: max-height 0.2s ease-out;
 }
 
-div.sidemenu div.sidemenu-find table {
-  width: 80%;
-  margin: auto;
+div.nav-toggle div.up-triangle {
+  position: absolute;
+  top: 0;
+  right: 90px;
+  width: 0;
+  height: 0;
+  border-top: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #f0f0f0;
 }
 
-div.sidemenu div.sidemenu-find table a {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 6px;
-  opacity: 0.7;
+div.nav-toggle ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 24px;
+  margin-left: 2%; 
+  width: 96%;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #f0f0f0;
+}
+
+div.nav-toggle ul li {
+  list-style: none;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ffffff;
+  text-align: center;
+  vertical-align: center;
+  color: #363636;
+  cursor: pointer;
   transition: 0.2s;
 }
 
-div.sidemenu div.sidemenu-find table a.weibo {
-  background: url("../icon/weibo.png") center no-repeat #ffa500;
-}
-
-div.sidemenu div.sidemenu-find table a.douban {
-  background: url("../icon/douban.png") center no-repeat #008000;
-}
-
-div.sidemenu div.sidemenu-find table a.github {
-  background: url("../icon/github.png") center no-repeat #808080;
-}
-
-div.sidemenu div.sidemenu-find table a.zhihu {
-  background: url("../icon/zhihu.png") center no-repeat #1e90ff;
-}
-
-div.sidemenu div.sidemenu-find table a.linkedin {
-  background: url("../icon/linkedin.png") center no-repeat #191970;
-}
-
-div.sidemenu div.sidemenu-find table a.facebook {
-  background: url("../icon/facebook.png") center no-repeat #6495ed;
-}
-
-div.sidemenu div.sidemenu-find table a:hover {
-  opacity: 1;
-}
-
-div.content-head {
-  position: fixed;
-  top: 0;
-  left: 250px;
-  right: 0;
-  height: 85px;
+div.nav-toggle ul li div.icon {
+  width: 100px;
+  height: 100px;
   text-align: center;
-  background-color: #ffffff;
+  float: left;
 }
 
-div.content-head img {
-  padding-top: 15px;
-  height: 50px;
+div.nav-toggle ul li div.icon img {
+  position: relative;
+  top: 20px;
+  width: 60px;
+  height: 60px;
+}
+
+div.nav-toggle ul li div.name {
+  height: 100px;
+  line-height: 100px;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 div.content-main {
-  position: absolute;
-  top: 85px;
-  bottom: 15px;
-  left: 250px;
+  position: fixed;
+  top: 250px;
+  bottom: 60px;
+  left: 0;
   right: 0;
+  width: 100%;
+  overflow: auto;
   z-index: -1;
+  transition: 0.2s;
+  background-color: #ffffff;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 250px;
-  height: 30px;
-  border-radius: 0 15px 0 0;
-  background-color: #696969;
+  right: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+footer div.findme {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 60px;
+}
+
+footer div.findme table {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+
+footer div.findme table a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 6px;
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+footer div.findme table a.weibo {
+  background: url("../icon/weibo.png") center no-repeat #ffa500;
+}
+
+footer div.findme table a.douban {
+  background: url("../icon/douban.png") center no-repeat #008000;
+}
+
+footer div.findme table a.github {
+  background: url("../icon/github.png") center no-repeat #808080;
+}
+
+footer div.findme table a.zhihu {
+  background: url("../icon/zhihu.png") center no-repeat #1e90ff;
+}
+
+footer div.findme table a.linkedin {
+  background: url("../icon/linkedin.png") center no-repeat #191970;
+}
+
+footer div.findme table a.facebook {
+  background: url("../icon/facebook.png") center no-repeat #6495ed;
 }
 
 footer div.timestamp {
-  position: absolute;
-  top: 10%;
-  bottom: 10%;
-  left: 5%;
-  right: 5%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 40px;
+  padding-top: 7px;
+  border-radius: 15px 0 0 0;
+  background-color: #696969;
   text-align: center;
-  padding-top: 2px;
   font-family: monospace;
+  font-size: 20px;
 }
 
 footer div.timestamp a {
   color: #ffffff;
 }
 
-footer div.timestamp a:hover {
-  color: #e8e8e8;
-}
-
 div.section-head {
-  height: 30px;
+  height: 45px;
   padding-top: 12px;
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 32px;
   font-weight: bold;
   color: #484848;
   vertical-align: middle;
 }
 
 div.section-head div.section-icon {
-  width: 30px;
-  height: 30px;
-  padding-left: 5px;
+  width: 45px;
+  height: 45px;
+  padding-left: 10px;
   float: left;
 }
 
 div.section-head div.section-icon img {
   width: auto;
   height: auto;
-  max-height: 30px;
+  max-height: 45px;
 }
 
 div.section-head div.section-title {
-  height: 25px;
+  height: 45px;
   padding-left: 10px;
-  line-height: 30px;
+  line-height: 45px;
   float: left;
 }
 
 div.section-body {
-  padding: 10px;
-  font-size: 18px;
+  padding: 20px;
+  font-size: 25px;
   line-height: 160%;
 }
 
@@ -301,7 +344,7 @@ div.section-body {
 }
 
 #cv #cv-head {
-  height: 150px;
+  height: 190px;
 }
 
 #cv #cv-head #py-name {
@@ -309,72 +352,66 @@ div.section-body {
   top: 0;
   left: 20%;
   width: 60%;
-  height: 40px;
-  font-size: 30px;
+  height: 50px;
+  font-size: 40px;
   text-align: center;
   font-weight: bold;
 }
 
 #cv #cv-head #chn-name {
   position: absolute;
-  top: 40px;
+  top: 50px;
   left: 20%;
   width: 60%;
-  height: 50px;
-  font-size: 20px;
+  height: 70px;
+  font-size: 28px;
   text-align: center;
   font-weight: bold;
 }
 
 #cv #cv-head #major {
   position: absolute;
-  top: 90px;
+  top: 120px;
   left: 20%;
   width: 60%;
-  height: 30px;
-  font-size: 20px;
+  height: 35px;
+  font-size: 26px;
   text-align: center;
 }
 
 #cv #cv-head #school {
   position: absolute;
-  top: 120px;
+  top: 155px;
   left: 20%;
   width: 60%;
-  height: 30px;
-  font-size: 20px;
+  height: 35px;
+  font-size: 26px;
   text-align: center;
 }
 
 #cv #cv-head #pdf-button {
   position: absolute;
-  top: 55px;
+  top: 75px;
   left: 10px;
-  width: 80px;
-  height: 45px;
+  width: 110px;
+  height: 65px;
   box-shadow: 2px 2px 5px #d3d3d3;
   border-radius: 12px;
   text-align: center;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: bold;
-  line-height: 45px;
+  line-height: 65px;
   background-color: #ffebee;
-  opacity: 0.8;
+  opacity: 0.9;
   cursor: pointer;
   transition: 0.2s;
 }
 
-#cv #cv-head #pdf-button:hover {
-  box-shadow: 5px 5px 8px #d3d3d3;
-  background-color: #fbe9e7;
-  opacity: 1;
-}
-
 #cv #cv-head #ha-index {
   position: absolute;
-  top: 118px;
+  top: 155px;
   left: 12px;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 #cv #cv-head #photo {
@@ -382,7 +419,7 @@ div.section-body {
   top: 0;
   right: 0;
   width: 20%;
-  height: 150px;
+  height: 185px;
 }
 
 #cv #cv-head #photo img {
@@ -398,19 +435,19 @@ div.section-body {
 
 #cv #cv-contacts table th {
   padding-right: 20px;
-  font-size: 20px;
+  font-size: 27px;
   text-align: left;
   vertical-align: middle;
 }
 
 #cv #cv-contacts table td {
-  font-size: 19px;
+  font-size: 25px;
   text-align: left;
   vertical-align: middle;
 }
 
 #cv #cv-skills table {
-  font-size: 19px;
+  font-size: 25px;
   text-align: center;
   vertical-align: middle;
 }
@@ -427,7 +464,7 @@ div.section-body {
 #cv #cv-links table {
   text-align: center;
   vertical-align: middle;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 #cv #cv-links table td {
@@ -437,7 +474,7 @@ div.section-body {
 #cv #cv-links table img {
   width: auto;
   height: auto;
-  max-height: 100px;
+  max-height: 90px;
   cursor: pointer;
 }
 
@@ -458,15 +495,9 @@ div.section-body {
   border-radius: 12px;
   vertical-align: top;
   background-color: #f5f5f5;
-  opacity: 0.8;
+  opacity: 0.9;
   cursor: pointer;
   transition: 0.2s;
-}
-
-#notes table.notes-table td.course:hover {
-  box-shadow: 8px 8px 10px #d3d3d3;
-  background-color: #f0f0f0;
-  opacity: 1;
 }
 
 #notes table.notes-table td div.name {
@@ -476,7 +507,7 @@ div.section-body {
 }
 
 #notes table.notes-table td div.name h1 {
-  font-size: 22px;
+  font-size: 26px;
   padding-left: 5%;
 }
 
@@ -489,7 +520,7 @@ div.section-body {
 
 #notes table.notes-table td div.icon img {
   padding-top: 15px;
-  max-width: 90%;
+  max-width: 95%;
   max-height: 60px;
 }
 
@@ -505,19 +536,19 @@ div.section-body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 500px;
+  height: 800px;
 }
 
 #resources #file-server #file-parent {
-  height: 440px;
+  height: 740px;
   text-align: center;
 }
 
 #resources #announcements {
   position: absolute;
-  top: 500px;
+  top: 800px;
   width: 100%;
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -538,15 +569,9 @@ div.section-body {
   border-radius: 12px;
   vertical-align: middle;
   background-color: #f5f5f5;
-  opacity: 0.8;
+  opacity: 0.9;
   cursor: pointer;
   transition: 0.2s;
-}
-
-#blogs table.blogs-table td:hover {
-  box-shadow: 8px 8px 10px #d3d3d3;
-  background-color: #f0f0f0;
-  opacity: 1;
 }
 
 #blogs table.blogs-table td div.index {
@@ -556,7 +581,7 @@ div.section-body {
 }
 
 #blogs table.blogs-table td div.index h1 {
-  font-size: 24px;
+  font-size: 28px;
   font-family: monospace;
   padding-top: 10px;
   padding-left: 40px;
@@ -570,7 +595,7 @@ div.section-body {
 
 #blogs table.blogs-table td div.name h1 {
   text-align: left;
-  font-size: 22px;
+  font-size: 26px;
   padding-left: 40px;
 }
 
@@ -581,9 +606,9 @@ div.section-body {
 }
 
 #blogs table.blogs-table td div.source h1 {
-  font-size: 18px;
   padding-top: 5px;
   font-family: monospace;
+  font-size: 22px;
   text-align: center;
   opacity: 0.9;
 }
@@ -614,15 +639,25 @@ div.section-body {
 }
 
 /* For course note page. */
-div.course-icon {
+div.course-topmenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 180px;
+  background-color: #ffffff;
+}
+
+div.course-topmenu div.course-icon {
   position: fixed;
   top: 20px;
   left: 0;
-  width: 310px;
-  height: 80px;
+  width: 300px;
+  height: 150px;
 }
 
-div.course-icon img {
+div.course-topmenu div.course-icon img {
   width: auto;
   height: 100%;
   margin-left: auto;
@@ -631,53 +666,102 @@ div.course-icon img {
   cursor: pointer;
 }
 
-div.course-pdf {
+div.course-topmenu div.course-announcement {
   position: fixed;
-  bottom: 42px;
-  left: 110px;
-  width: 65px;
-  height: 35px;
+  top: 50px;
+  left: 300px;
+  right: 300px;
+  line-height: 45px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  font-size: 28px;
+  color: #505050;
+}
+
+div.course-topmenu div.course-pdf {
+  position: fixed;
+  top: 30px;
+  right: 60px;
+  width: 130px;
+  height: 70px;
   box-shadow: 2px 2px 5px #d3d3d3;
   border-radius: 12px;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
+  font-size: 34px;
   font-weight: bold;
-  line-height: 35px;
+  line-height: 70px;
   background-color: #ffebee;
-  opacity: 0.8;
+  opacity: 0.9;
   cursor: pointer;
   transition: 0.2s;
 }
 
-div.course-pdf:hover {
-  box-shadow: 5px 5px 8px #d3d3d3;
-  background-color: #fbe9e7;
-  opacity: 1;
+div.course-topmenu button.course-attention {
+  position: fixed;
+  top: 120px;
+  right: 100px;
+  width: 50px;
+  height: 45px;
+  border: 0;
+  outline: 0;
+  text-align: center;
+  background-color: #ffffff;
 }
 
-div.course-announcement {
+div.course-topmenu button.course-attention img {
+  width: auto;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+div.attention-toggle {
   position: fixed;
-  bottom: 10px;
-  left: 0;
-  width: 310px;
-  height: 20px;
+  top: 180px;
+  right: 0;
+  width: 60%;
   text-align: center;
-  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "黑体", "Microsoft YaHei", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
-  font-size: 16px;
-  color: #505050;
+  overflow: hidden;
+  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  font-size: 24px;
+  display: none;
+  z-index: 1;
+  transition: 0.1s;
+}
+
+div.attention-toggle div.up-triangle {
+  position: absolute;
+  top: 0;
+  right: 105px;
+  width: 0;
+  height: 0;
+  border-top: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid #f0f0f0;
+}
+
+div.attention-toggle div.attention-words {
+  width: 90%;
+  margin-top: 25px;
+  padding: 15px;
+  color: #363636;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #f0f0f0;
 }
 
 div.course-top {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 42px;
-  height: 42px;
+  bottom: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
   box-shadow: 2px 2px 5px #d3d3d3;
-  line-height: 19px;
+  line-height: 37px;
   font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
+  font-size: 32px;
   font-weight: bold;
   text-align: center;
   border-radius: 12px;
@@ -688,35 +772,68 @@ div.course-top {
   transition: 0.2s;
 }
 
-div.course-top:hover {
-  box-shadow: 5px 5px 8px #d3d3d3;
-  background-color: #e4e4e4;
-  opacity: 1;
+button.trigger {
+  position: fixed;
+  top: 560px;
+  right: -90px;
+  width: 150px;
+  height: 150px;
+  border: solid 3px #d0d0d0;
+  outline: 0;
+  border-radius: 50%;
+  z-index: 100;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+button.trigger.active {
+  background-color: #d6d6d6;
+}
+
+button.trigger img {
+  position: absolute;
+  top: 35%;
+  left: 7%;
+  right: 65%;
+  width: 28%;
+  height: 30%;
 }
 
 div.bookmark {
   position: fixed;
-  top: 120px;
-  bottom: 100px;
-  left: 10px;
-  right: 20px;
-  width: 300px;
+  top: 230px;
+  bottom: 50px;
+  right: -500px;
+  width: 500px;
+  z-index: 100;
+  border-top: 3px solid #d0d0d0;
+  border-bottom: 3px solid #d0d0d0;
+  border-left: 3px solid #d0d0d0;
+  border-radius: 15px 0 0 15px;
   overflow: auto;
   text-align: left;
+  background-color: #ffffff;
+  transition: 0.3s;
 }
 
 div.bookmark div.accordian {
-  width: 272px;
+  width: 485px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 div.bookmark div.accordian button.unfold {
   width: 100%;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
   padding: 5px 14px 5px 14px;
   border: solid 3px #ffffff;
   outline: 0;
-  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "黑体", "Microsoft YaHei", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
-  font-size: 19px;
+  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  font-size: 26px;
   font-weight: bold;
   text-align: left;
   border-radius: 12px;
@@ -726,18 +843,8 @@ div.bookmark div.accordian button.unfold {
   transition: 0.3s;
 }
 
-div.bookmark div.accordian button.unfold:hover {
-  background-color: #fff8dc;
-  opacity: 1;
-}
-
 div.bookmark div.accordian button.unfold.active {
   background-color: #d8d8d8;
-}
-
-div.bookmark div.accordian button.unfold.active:hover {
-  background-color: #fff8dc;
-  opacity: 1;
 }
 
 div.bookmark div.accordian div.toggle {
@@ -749,28 +856,26 @@ div.bookmark div.accordian div.toggle {
 
 div.bookmark div.accordian div.toggle ol {
   padding-left: 40px;
-  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "黑体", "Microsoft YaHei", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
-  font-size: 18px;
+  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei";
+  font-size: 24px;
   color: #505050;
 }
 
 div.bookmark div.accordian div.toggle ol li {
   padding: 5px 10px 5px 10px;
-  border: solid 3px #ffffff;
+  border: solid 6px #ffffff;
   border-radius: 12px;
   background-color: #f6f6f6;
   cursor: pointer;
   transition: 0.3s;
 }
 
-div.bookmark div.accordian div.toggle ol li:hover {
-  background-color: #fff8dc;
-}
-
 div.note-body {
   position: absolute;
-  top: 0;
-  bottom: 20px;
-  left: 320px;
+  top: 180px;
+  bottom: 30px;
+  left: 0;
   right: 0;
+  width: 100%;
+  z-index: -1;
 }
