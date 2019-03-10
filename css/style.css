@@ -589,7 +589,10 @@ div.section-body {
 }
 
 #blogs table.blogs-table td div.source img {
-  width: 80px;
+  width: auto;
+  height: auto;
+  max-width: 80px;
+  max-height: 30px;
 }
 
 #blogs table.blogs-table #dots-row {
@@ -618,7 +621,7 @@ div.course-icon {
   position: fixed;
   top: 20px;
   left: 0;
-  width: 310px;
+  width: 360px;
   height: 80px;
 }
 
@@ -634,7 +637,7 @@ div.course-icon img {
 div.course-pdf {
   position: fixed;
   bottom: 42px;
-  left: 110px;
+  left: 145px;
   width: 65px;
   height: 35px;
   box-shadow: 2px 2px 5px #d3d3d3;
@@ -660,7 +663,7 @@ div.course-announcement {
   position: fixed;
   bottom: 10px;
   left: 0;
-  width: 310px;
+  width: 360px;
   height: 20px;
   text-align: center;
   font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "黑体", "Microsoft YaHei", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
@@ -700,13 +703,13 @@ div.bookmark {
   bottom: 100px;
   left: 10px;
   right: 20px;
-  width: 300px;
+  width: 360px;
   overflow: auto;
   text-align: left;
 }
 
 div.bookmark div.accordian {
-  width: 272px;
+  width: 332px;
 }
 
 div.bookmark div.accordian button.unfold {
@@ -771,6 +774,6 @@ div.note-body {
   position: absolute;
   top: 0;
   bottom: 20px;
-  left: 320px;
+  left: 380px;
   right: 0;
 }
