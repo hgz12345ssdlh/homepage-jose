@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
+
 import os
 
-full, abbr = 'Paper Writing Streamline', 'paper-writing'
+full, abbr = 'Computer Architecture II', 'computer-architecture-2'
 
 #
 # PC.
@@ -65,7 +67,7 @@ f_int.close()
 f_out.close()
 
 os.remove('int.html')
-os.rename('out.html', '../course-notes/'+abbr+'.html')
+os.rename('out.html', '../notebook/'+abbr+'.html')
 
 #
 # Wap.
@@ -130,4 +132,4 @@ f_int.close()
 f_out.close()
 
 os.remove('int.html')
-os.rename('out.html', '../m/course-notes/'+abbr+'.html')
+os.rename('out.html', '../m/notebook/'+abbr+'.html')
