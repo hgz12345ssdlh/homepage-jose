@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <title>Jose - Basic GDB Usage Cheatsheet</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../css/auto.css" />
     <link rel="shortcut icon" href="../icon/favicon.ico" type="image/vnd.microsoft.icon" />
     <link rel="icon" href="../icon/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -21,59 +20,14 @@
     </style>
   </head>
   <body>
-    <script type="text/javascript">
-      if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        window.location.href = "../m/course-notes/gdb-usage.html";
-      }
-    </script>
-
-<!-- Decorations -->
-<div class="course-icon"><img src="../icon/gdb-usage-show.png" alt="" onclick="location.href='#'"></div>
-<div class="course-pdf" onclick="window.open('../files/notes-pdf/gdb-usage.pdf')" title="
-数学符号使用 MathJax 引擎，可能被部分浏览器拦截为不安全插件，请放心允许加载以更好地在线浏览，或下载 PDF 版本。
-Display of math symbols require the MathJax engine (which might be considered unsafe by several browsers). You can allow loading them for better online browsing experience, or download PDF version.
-">PDF</div>
-<div class="course-announcement" title="
-数学符号使用 MathJax 引擎，可能被部分浏览器拦截为不安全插件，请放心允许加载以更好地在线浏览，或下载 PDF 版本。
-Display of math symbols require the MathJax engine (which might be considered unsafe by several browsers). You can allow loading them for better online browsing experience, or download PDF version.
-">Jose 胡冠洲 @ ShanghaiTech</div>
-<div class="course-top" onclick="location.href='#'">↑<br />Top</div>
-
-<!-- Bookmark -->
-<div class="bookmark">
-  <div class="accordian">
-
-    <button class="unfold">1. Invoke GDB / Exit</button>
-    <div class="toggle">
-      <ol>
-        <li onclick="location.href='#1.1'">Invoke GDB & Run</li>
-        <li onclick="location.href='#1.2'">Exit GDB</li>
-      </ol>
-    </div>
-
-    <button class="unfold">2. Common Debugging Commands</button>
-    <div class="toggle">
-      <ol>
-        <li onclick="location.href='#2.1'">Set Breaks / Watch Variables</li>
-        <li onclick="location.href='#2.2'">Continue / Step Execution</li>
-        <li onclick="location.href='#2.3'">List Source Codes</li>
-        <li onclick="location.href='#2.4'">Examine / Modify Data</li>
-        <li onclick="location.href='#2.5'">Examine Current Frame</li>
-        <li onclick="location.href='#2.6'">Backtrace / Move among Frames</li>
-      </ol>
-    </div>
-
-  </div>
-</div>
-<script type="text/javascript" src="../js/accordian.js"></script>
-
-<!-- Main body -->
-<div class="note-body">
 
     <div class="container">
       <div id="markup">
         <article id="content" class="markdown-body">
           <h1>Basic GDB Usage</h1>
+<blockquote>
+<p>Author: Jose 胡冠洲 @ ShanghaiTech</p>
+</blockquote>
 <p>Combine the commands below to serve your debugging!</p>
 <h2>Invoke GDB / Exit</h2>
 <a name="1.1"></a><h3>Invoke GDB &amp; Run</h3>
@@ -257,25 +211,6 @@ Display of math symbols require the MathJax engine (which might be considered un
       </div>
     </div>
 
-</div>
-
   </body>
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-          displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
-          processEscapes: true
-        },
-        TeX: {
-          equationNumbers: {
-            autoNumber: 'AMS'
-          }
-        },
-        "HTML-CSS": {
-          imageFont: null
-        }
-      });
-  </script>
-  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.1-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 </html>
