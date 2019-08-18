@@ -4,14 +4,15 @@
   <!-- Head -->
   <head>
     <meta charset="utf-8" />
-    <title>Jose - Home</title>
-    <meta name="Keywords" content="个人主页 Jose Homepage 博客 Blogs 笔记 Notes 资源 Resources">
+    <title>Jose Hu - Home</title>
+    <meta name="Keywords" content="个人主页 Jose Homepage 博客 Blogs 笔记 Notes">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/vnd.microsoft.icon" />
     <link rel="icon" href="icon/favicon.ico" type="image/vnd.microsoft.icon" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <!-- Body -->
@@ -37,7 +38,7 @@
         <table>
           <tr><th class="eng-name">Jose Hu</th></tr>
           <tr><th class="chn-name">胡冠洲</th></tr>
-          <tr><td>"Dream hard, work hard."</td></tr>
+          <tr><td>"Work hard, dream hard."</td></tr>
         </table>
       </div>
 
@@ -52,10 +53,6 @@
           <tr>
             <td class="fill"></td>
             <td class="word" onclick="location.href='notes.html'">&nbsp; 笔记 &nbsp; Notes</td>
-          </tr>
-          <tr>
-            <td class="fill"></td>
-            <td class="word" onclick="location.href='resources.html'">&nbsp; 资源 &nbsp; Resources</td>
           </tr>
           <tr>
             <td class="fill"></td>
@@ -93,7 +90,7 @@
 
         <!-- CV head section -->
         <div id="cv-head">
-          <div id="py-name">Guanzhou Hu</div>
+          <div id="py-name">Guanzhou (Jose) Hu</div>
           <div id="chn-name">胡冠洲</div>
           <div id="major">Computer Science and Technology</div>
           <div id="school">ShanghaiTech University</div>
@@ -109,7 +106,72 @@
             <div class="section-title">个人简介 Introduction</div>
           </div>
           <div class="section-body">
-            Undergraduate student majoring in Computer Science and Technology at ShanghaiTech University. My research focus is mainly on computer systems software. Specifically, my research interests span across parallel / distributed operating systems, storage systems, parallel / distributed computing and high-performance computing. Currently working in Laboratory of Distributed I/O System and Data Science (L.I.O.N group). Seeking opportunities to study abroad and dig deeper into the field of computer systems.
+            <script>    // "Show more - Show less" functions.
+              function changeShowStorage() {
+                var moreText = document.getElementById("more-text-storage");
+                var moreButton = document.getElementById("more-button-storage");
+
+                if (moreText.style.display === "none") {
+                  moreText.style.display = "inline";
+                  moreButton.innerHTML = "Show Less <<";
+                } else {
+                  moreText.style.display = "none";
+                  moreButton.innerHTML = "Show More >>";
+                }
+              }
+              function changeShowLambda() {
+                var moreText = document.getElementById("more-text-lambda");
+                var moreButton = document.getElementById("more-button-lambda");
+
+                if (moreText.style.display === "none") {
+                  moreText.style.display = "inline";
+                  moreButton.innerHTML = "Show Less <<";
+                } else {
+                  moreText.style.display = "none";
+                  moreButton.innerHTML = "Show More >>";
+                }
+              }
+            </script>
+            <p>
+              Undergraduate student majoring in Computer Science and Technology at ShanghaiTech University. My study is mainly focusing on <b>Computer Systems Software</b>. Specifically, my research interests span across <i>parallel / distributed computing</i>, modern <i>operating systems</i> (especially storage systems), <i>high-performance computing</i>, and <i>cloud computing</i>. I always enjoy building practical systems for large-scale real-world workloads that are not yet efficiently handled.
+            </p>
+            <p>
+              I have been working on several <b>storage optimization</b> projects with Prof. Shu Yin, in the Laboratory of Distributed I/O System and Data Science (L.I.O.N group), at ShanghaiTech University. <span id="more-text-storage" style="display: none;">Nowadays there exist many different data-analytic applications across various fields, interacting with large-scale & highly-structured data (e.g., <i>ROS bag files</i>, <i>VMD molecule files</i>, and <i>cluster tracing logs</i>). Such data are structured in very complicated ways. I/O with these data formats on traditional file systems is surprisingly inefficient. We build storage middle layers that are aware of these complicated application-specified data formats, trying to make use of their inner "<i>content locality</i>".</span> <a class="more-button" id="more-button-storage" onclick="changeShowStorage()">Show More >></a>
+            </p>
+            <p>
+              I am also developing a <b>scalable & affordable serverless graph convolutional networks computing system</b> with Prof. Harry Xu, at University of California, Los Angeles. <span id="more-text-lambda" style="display: none;">We are trying to integrate lambda computing with traditional graph computing frameworks, so that: 1. Split graph computation (e.g., aggregation) apart from tensor computation (e.g., matrix multiplication), use well-developed graph computing frameworks for the former part, and use parallelable computing resources for the latter part; 2. On the tensor part, enable modern serverless <i>lambda computing</i> as a cheaper and much more scalable alternative to traditional expensive GPUs. We hope to provide an affordable & efficient computing platform for such newly emerging graph neural networks, so that users can easily deploy graph ML applications and benefit from them.</span> <a class="more-button" id="more-button-lambda" onclick="changeShowLambda()">Show More >></a>
+            </p>
+            <p>
+              Currently seeking opportunities to study abroad, learn more cutting-edge technologies, and dig deeper in the field of computer systems.
+            </p>
+          </div>
+        </div>
+
+        <!-- CV skills section -->
+        <div id="cv-skills"><hr />
+          <div class="section-head">
+            <div class="section-icon"><img src="icon/skills-icon.png" alt=""></div>
+            <div class="section-title">专业技能 Fields & Skills</div>
+          </div>
+          <div class="section-body">
+            <table cellspacing="5px" align="center">
+              <tr>
+                <td><b>Computer Systems</b></td>
+                <td>Operating Systems</td>
+                <td colspan="2">Parallel/Distributed Computing</td>
+              </tr>
+              <tr>
+                <td>Cloud Computing</td>
+                <td>Linux Servers</td>
+                <td colspan="2">High-performance Computing</td>
+              </tr>
+              <tr id="programming-languages">
+                <td style="color: #dc1437;">C/C++</td>
+                <td style="color: #4862b4;">Python</td>
+                <td style="color: #605347;">Rust</td>
+                <td style="color: #d2691e;">MIPS</td>
+              </tr>
+            </table>
           </div>
         </div>
 
@@ -136,34 +198,6 @@
           </div>
         </div>
 
-        <!-- CV skills section -->
-        <div id="cv-skills"><hr />
-          <div class="section-head">
-            <div class="section-icon"><img src="icon/skills-icon.png" alt=""></div>
-            <div class="section-title">专业技能 Fields & Skills</div>
-          </div>
-          <div class="section-body">
-            <table cellspacing="5px" align="center">
-              <tr>
-                <td><b>Computer Systems</b></td>
-                <td>Operating Systems</td>
-                <td colspan="2">Parallel/Distributed Computing</td>
-              </tr>
-              <tr>
-                <td>Storage Systems</td>
-                <td>Linux Servers</td>
-                <td colspan="2">High-performance Computing</td>
-              </tr>
-              <tr id="programming-languages">
-                <td style="color: #dc1437;">C/C++</td>
-                <td style="color: #4862b4;">Python</td>
-                <td style="color: #605347;">Rust</td>
-                <td style="color: #d2691e;">RISC</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-
         <!-- Links section -->
         <div id="cv-links"><hr />
           <div class="section-head">
@@ -171,10 +205,10 @@
             <div class="section-title">相关链接 Links</div>
           </div>
           <div class="section-body">
-            <table align="center"><tr>
-              <td><a href="http://lion.sist.shanghaitech.edu.cn" target="_blank">L.I.O.N Lab</a></td>
-              <td><img src="img/LION.png" alt="" onclick="window.open('http://lion.sist.shanghaitech.edu.cn')"></td>
-            </tr></table>
+            <div id="links-logo-area">
+              <img id="LION-logo" src="img/LION.png" alt="" onclick="window.open('http://lion.sist.shanghaitech.edu.cn')">
+              <img id="AnalySys-logo" src="img/AnalySys.png" alt="" onclick="window.open('http://systems.cs.ucla.edu/')">
+            </div>
           </div>
         </div>
 
@@ -184,7 +218,7 @@
 
     <!-- Footer -->
     <footer>
-      <div class="timestamp"><a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备18071367号</a></div>
+      <div class="timestamp"><a href="http://www.beian.miit.gov.cn/" target="_blank">苏ICP备18071367号</a></div>
     </footer>
 
   </body>

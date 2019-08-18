@@ -7,10 +7,10 @@ button.onclick = function() {
   if (list.style.maxHeight) {
     list.style.maxHeight = null;
     list.style.zIndex = -2;
-    content.style.top = "250px";
+    content.style.top = "110px";
   } else {
     list.style.maxHeight = list.scrollHeight + "px";
     list.style.zIndex = 0;
-    content.style.top = (parseInt(list.scrollHeight) + 250).toString() + "px";
+    content.style.top = (parseInt(list.scrollHeight) + 110).toString() + "px";
   } 
 }

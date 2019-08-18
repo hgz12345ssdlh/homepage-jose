@@ -4,7 +4,14 @@ body {
   background-color: #ffffff;
 }
 
-/* ALL pages. */
+
+/**
+ *
+ * For all pages.
+ * 
+ */
+
+/** Hyperlink style. */
 a:link {
   text-decoration: none;
   color: #4682b4;
@@ -25,98 +32,100 @@ a:active {
   color: #ffd700;
 }
 
-div.sidemenu {
+/** Sidemenu & Main content region. */
+.sidemenu {
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 250px;
+  width: 220px;
 }
 
-div.sidemenu div.sidemenu-head {
+.sidemenu .sidemenu-head {
   position: absolute;
   top: 0;
   left: 0;
-  height: 250px;
-  width: 250px;
+  height: 160px;
+  width: 100%;
   border-radius: 0 0 15px 0;
   background-color: #696969;
 }
 
-div.sidemenu div.sidemenu-head img.name-logo {
+.sidemenu .sidemenu-head img.name-logo {
   position: absolute;
-  top: 50px;
-  left: 40px;
-  height: 80px;
-  width: 170px;
+  top: 10%;
+  left: 14%;
+  height: 44%;
+  width: 72%;
   cursor: pointer;
 }
 
-div.sidemenu div.sidemenu-head div.overlay {
+.sidemenu .sidemenu-head .overlay {
   position: absolute;
-  top: 190px;
-  left: 65px;
-  width: 120px;
-  height: 120px;
+  top: 62.5%;
+  left: 23%;
+  width: 54%;
+  height: 75%;
   border-radius: 50%;
   background-color: #ffffff;
 }
 
-div.sidemenu div.sidemenu-head img.avatar {
+.sidemenu .sidemenu-head img.avatar {
   position: absolute;
-  top: 200px;
-  left: 75px;
-  width: 100px;
-  height: 100px;
+  top: 65%;
+  left: 28%;
+  width: 44%;
+  height: 62%;
   border-radius: 50%;
 }
 
-div.sidemenu div.sidemenu-info {
+.sidemenu .sidemenu-info {
   position: absolute;
-  top: 300px;
+  top: 210px;
   left: 0;
-  width: 250px;
+  width: 100%;
   height: 120px;
 }
 
-div.sidemenu div.sidemenu-info table {
+.sidemenu .sidemenu-info table {
   margin: auto;
 }
 
-div.sidemenu div.sidemenu-info table th.eng-name {
+.sidemenu .sidemenu-info table th.eng-name {
   text-align: center;
   font-size: 30px;
   color: #1f618d;
 }
 
-div.sidemenu div.sidemenu-info table th.chn-name {
+.sidemenu .sidemenu-info table th.chn-name {
   text-align: center;
   font-size: 20px;
   color: #1f618d;
 }
 
-div.sidemenu div.sidemenu-info table td {
+.sidemenu .sidemenu-info table td {
   padding-top: 12px;
   text-align: center;
-  font-size: 19px;
+  font-size: 18px;
   color: #808080;
 }
 
-div.sidemenu div.sidemenu-nav {
+.sidemenu .sidemenu-nav {
   position: absolute;
-  top: 425px;
+  top: 340px;
+  bottom: 80px;
   left: 0;
-  width: 250px;
-  height: 270px;
-}
-
-div.sidemenu div.sidemenu-nav table {
-  border-style: none;
-  border-width: 0;
   width: 100%;
 }
 
-div.sidemenu div.sidemenu-nav table td {
+.sidemenu .sidemenu-nav table {
+  border-style: none;
+  border-width: 0;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.sidemenu .sidemenu-nav table td {
   padding: 4px;
   text-align: left;
   vertical-align: middle;
@@ -124,26 +133,26 @@ div.sidemenu div.sidemenu-nav table td {
   color: #1f618d;
 }
 
-div.sidemenu div.sidemenu-nav table td.fill {
-  width: 40px;
+.sidemenu .sidemenu-nav table td.fill {
+  width: 10%;
 }
 
-div.sidemenu div.sidemenu-nav table td.word {
-  width: 185px;
+.sidemenu .sidemenu-nav table td.word {
+  width: 80%;
   padding-left: 12px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-div.sidemenu div.sidemenu-nav table td.word:hover {
+.sidemenu .sidemenu-nav table td.word:hover {
   background-color: #fff8dc;
 }
 
-div.sidemenu div.sidemenu-nav table td.arrow {
+.sidemenu .sidemenu-nav table td.arrow {
   width: 25px;
 }
 
-div.sidemenu div.sidemenu-nav table img {
+.sidemenu .sidemenu-nav table img {
   width: 15px;
   height: 20px;
   text-align: right;
@@ -151,19 +160,19 @@ div.sidemenu div.sidemenu-nav table img {
   float: right;
 }
 
-div.sidemenu div.sidemenu-find {
+.sidemenu .sidemenu-find {
   position: absolute;
   bottom: 35px;
   left: 0;
-  width: 250px;
+  width: 100%;
 }
 
-div.sidemenu div.sidemenu-find table {
+.sidemenu .sidemenu-find table {
   width: 80%;
   margin: auto;
 }
 
-div.sidemenu div.sidemenu-find table a {
+.sidemenu .sidemenu-find table a {
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -174,54 +183,54 @@ div.sidemenu div.sidemenu-find table a {
   transition: 0.2s;
 }
 
-div.sidemenu div.sidemenu-find table a.weibo {
+.sidemenu .sidemenu-find table a.weibo {
   background: url("../icon/weibo.png") center no-repeat #ffa500;
 }
 
-div.sidemenu div.sidemenu-find table a.douban {
+.sidemenu .sidemenu-find table a.douban {
   background: url("../icon/douban.png") center no-repeat #008000;
 }
 
-div.sidemenu div.sidemenu-find table a.github {
+.sidemenu .sidemenu-find table a.github {
   background: url("../icon/github.png") center no-repeat #808080;
 }
 
-div.sidemenu div.sidemenu-find table a.zhihu {
+.sidemenu .sidemenu-find table a.zhihu {
   background: url("../icon/zhihu.png") center no-repeat #1e90ff;
 }
 
-div.sidemenu div.sidemenu-find table a.linkedin {
+.sidemenu .sidemenu-find table a.linkedin {
   background: url("../icon/linkedin.png") center no-repeat #191970;
 }
 
-div.sidemenu div.sidemenu-find table a.facebook {
+.sidemenu .sidemenu-find table a.facebook {
   background: url("../icon/facebook.png") center no-repeat #6495ed;
 }
 
-div.sidemenu div.sidemenu-find table a:hover {
+.sidemenu .sidemenu-find table a:hover {
   opacity: 1;
 }
 
-div.content-head {
+.content-head {
   position: fixed;
   top: 0;
-  left: 250px;
+  left: 220px;
   right: 0;
   height: 85px;
   text-align: center;
   background-color: #ffffff;
 }
 
-div.content-head img {
+.content-head img {
   padding-top: 15px;
   height: 50px;
 }
 
-div.content-main {
+.content-main {
   position: absolute;
   top: 85px;
   bottom: 15px;
-  left: 250px;
+  left: 220px;
   right: 0;
   z-index: -1;
 }
@@ -230,13 +239,13 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 250px;
+  width: 220px;
   height: 30px;
   border-radius: 0 15px 0 0;
   background-color: #696969;
 }
 
-footer div.timestamp {
+footer .timestamp {
   position: absolute;
   top: 10%;
   bottom: 10%;
@@ -247,51 +256,58 @@ footer div.timestamp {
   font-family: monospace;
 }
 
-footer div.timestamp a {
+footer .timestamp a {
   color: #ffffff;
 }
 
-footer div.timestamp a:hover {
+footer .timestamp a:hover {
   color: #e8e8e8;
 }
 
-div.section-head {
+/** Section header & body. */
+.section-head {
   height: 30px;
   padding-top: 12px;
   font-family: sans-serif;
   font-size: 25px;
   font-weight: bold;
   color: #484848;
-  vertical-align: middle;
 }
 
-div.section-head div.section-icon {
+.section-head .section-icon {
   width: 30px;
   height: 30px;
   padding-left: 5px;
   float: left;
+  vertical-align: middle;
 }
 
-div.section-head div.section-icon img {
+.section-head .section-icon img {
   width: auto;
   height: auto;
   max-height: 30px;
 }
 
-div.section-head div.section-title {
+.section-head .section-title {
   height: 25px;
   padding-left: 10px;
   line-height: 30px;
   float: left;
+  vertical-align: middle;
 }
 
-div.section-body {
+.section-body {
   padding: 10px;
-  font-size: 18px;
+  font-size: 19px;
   line-height: 160%;
 }
 
-/* For index.html. */
+
+/**
+ *
+ * For index.html.
+ * 
+ */
 #cv {
   position: absolute;
   left: 4%;
@@ -301,14 +317,18 @@ div.section-body {
 }
 
 #cv #cv-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 150px;
 }
 
 #cv #cv-head #py-name {
   position: absolute;
   top: 0;
-  left: 20%;
-  width: 60%;
+  left: 0;
+  width: 100%;
   height: 40px;
   font-size: 30px;
   text-align: center;
@@ -318,8 +338,8 @@ div.section-body {
 #cv #cv-head #chn-name {
   position: absolute;
   top: 40px;
-  left: 20%;
-  width: 60%;
+  left: 0;
+  width: 100%;
   height: 50px;
   font-size: 20px;
   text-align: center;
@@ -332,7 +352,7 @@ div.section-body {
   left: 20%;
   width: 60%;
   height: 30px;
-  font-size: 20px;
+  font-size: 1.2vw;
   text-align: center;
 }
 
@@ -342,7 +362,7 @@ div.section-body {
   left: 20%;
   width: 60%;
   height: 30px;
-  font-size: 20px;
+  font-size: 1.2vw;
   text-align: center;
 }
 
@@ -382,7 +402,7 @@ div.section-body {
   top: 0;
   right: 0;
   width: 20%;
-  height: 150px;
+  height: 100%;
 }
 
 #cv #cv-head #photo img {
@@ -396,52 +416,89 @@ div.section-body {
   padding-right: 10px;
 }
 
+#cv #cv-introduction {
+  position: relative;   /* Make 150px room for #cv-head. */
+  top: 150px;
+}
+
+#cv #cv-introduction a.more-button {
+  text-decoration: none;
+  color: #4682b4;
+  cursor: pointer;
+}
+
+#cv #cv-introduction a.more-button:hover {
+  text-decoration: none;
+  color: #87cefa;
+  cursor: pointer;
+}
+
+#cv #cv-skills {
+  position: relative;   /* Make 150px room for #cv-head. */
+  top: 150px;
+}
+
+#cv #cv-skills table {
+  text-align: center;
+}
+
+#cv #cv-skills table td {
+  vertical-align: middle;
+}
+
+#cv #cv-skills table tr#programming-languages {
+  font-family: monospace;
+  font-weight: bold;
+}
+
+#cv #cv-contacts {
+  position: relative;   /* Make 150px room for #cv-head. */
+  top: 150px;
+}
+
 #cv #cv-contacts table th {
   padding-right: 20px;
-  font-size: 20px;
   text-align: left;
   vertical-align: middle;
 }
 
 #cv #cv-contacts table td {
-  font-size: 19px;
   text-align: left;
   vertical-align: middle;
 }
 
-#cv #cv-skills table {
-  font-size: 19px;
+#cv #cv-links {
+  position: relative;   /* Make 150px room for #cv-head. */
+  top: 150px;
+}
+
+#cv #cv-links #links-logo-area {
   text-align: center;
-  vertical-align: middle;
 }
 
-#cv #cv-skills table td {
-  padding-left: 25px;
-}
-
-#cv #cv-skills table #programming-languages {
-  font-family: monospace;
-  font-weight: bold;
-}
-
-#cv #cv-links table {
-  text-align: center;
-  vertical-align: middle;
-  font-size: 24px;
-}
-
-#cv #cv-links table td {
-  padding-left: 25px;
-}
-
-#cv #cv-links table img {
+#cv #cv-links #links-logo-area img {
   width: auto;
   height: auto;
-  max-height: 100px;
+  vertical-align: middle;
   cursor: pointer;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-/* For notes.html. */
+#cv #cv-links #links-logo-area img#LION-logo {
+  width: 18%;
+}
+
+#cv #cv-links #links-logo-area img#AnalySys-logo {
+  width: 24%;
+}
+
+
+/**
+ *
+ * For notes.html.
+ * 
+ */
 #notes {
   position: absolute;
   left: 4%;
@@ -469,59 +526,37 @@ div.section-body {
   opacity: 1;
 }
 
-#notes table.notes-table td div.name {
+#notes table.notes-table td .name {
   width: 80%;
   text-align: left;
   float: left;
+  line-height: 120%;
 }
 
-#notes table.notes-table td div.name h1 {
-  font-size: 22px;
+#notes table.notes-table td .name h1 {
+  font-size: 21px;
   padding-left: 5%;
 }
 
-#notes table.notes-table td div.icon {
+#notes table.notes-table td .icon {
   width: 20%;
-  height: 90px;
+  height: 80px;
   text-align: center;
   float: right;
 }
 
-#notes table.notes-table td div.icon img {
+#notes table.notes-table td .icon img {
   padding-top: 15px;
-  max-width: 90%;
+  max-width: 85%;
   max-height: 60px;
 }
 
-/* For resources.html. */
-#resources {
-  position: absolute;
-  left: 4%;
-  width: 92%;
-  height: 100%;
-}
 
-#resources #file-server {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 500px;
-}
-
-#resources #file-server #file-parent {
-  height: 440px;
-  text-align: center;
-}
-
-#resources #announcements {
-  position: absolute;
-  top: 500px;
-  width: 100%;
-  font-size: 20px;
-  text-align: center;
-}
-
-/* For blogs.html. */
+/**
+ *
+ * For blogs.html.
+ * 
+ */
 #blogs {
   position: absolute;
   left: 4%;
@@ -549,231 +584,55 @@ div.section-body {
   opacity: 1;
 }
 
-#blogs table.blogs-table td div.index {
+#blogs table.blogs-table td .index {
   width: 10%;
   text-align: center;
   float: left;
 }
 
-#blogs table.blogs-table td div.index h1 {
-  font-size: 24px;
+#blogs table.blogs-table td .index h1 {
+  font-size: 26px;
   font-family: monospace;
   padding-top: 10px;
   padding-left: 40px;
 }
 
-#blogs table.blogs-table td div.name {
-  width: 60%;
+#blogs table.blogs-table td .name {
+  width: 85%;
   text-align: left;
   float: left;
+  line-height: 120%;
 }
 
-#blogs table.blogs-table td div.name h1 {
+#blogs table.blogs-table td .name h1 {
   text-align: left;
-  font-size: 22px;
+  font-size: 20px;
   padding-left: 40px;
 }
 
-#blogs table.blogs-table td div.source {
-  width: 30%;
-  text-align: center;
-  float: right;
-}
-
-#blogs table.blogs-table td div.source h1 {
-  font-size: 18px;
-  padding-top: 5px;
-  font-family: monospace;
-  text-align: center;
-  opacity: 0.9;
-}
-
-#blogs table.blogs-table td div.source img {
-  width: auto;
-  height: auto;
-  max-width: 80px;
-  max-height: 30px;
-}
-
 #blogs table.blogs-table #dots-row {
-  height: 20px;
+  height: 18px;
   box-shadow: 0 0 0 #ffffff;
   text-align: center;
   background-color: #ffffff;
+  line-height: 18px;
 }
 
 #blogs table.blogs-table #dots {
-  font-size: 30px;
+  font-size: 24px;
   color: #696969;
 }
 
-/* Error page. */
+
+/**
+ *
+ * For error page.
+ * 
+ */
 #under-maintain {
   color: #9370db;
   font-size: 50px;
   text-align: center;
   padding-top: 30px;
   opacity: 0.7;
-}
-
-/* For course note page. */
-div.course-icon {
-  position: fixed;
-  top: 20px;
-  left: 0;
-  width: 360px;
-  height: 80px;
-}
-
-div.course-icon img {
-  width: auto;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  cursor: pointer;
-}
-
-div.course-pdf {
-  position: fixed;
-  bottom: 42px;
-  left: 145px;
-  width: 65px;
-  height: 35px;
-  box-shadow: 2px 2px 5px #d3d3d3;
-  border-radius: 12px;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 35px;
-  background-color: #ffebee;
-  opacity: 0.8;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-div.course-pdf:hover {
-  box-shadow: 5px 5px 8px #d3d3d3;
-  background-color: #fbe9e7;
-  opacity: 1;
-}
-
-div.course-announcement {
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  width: 360px;
-  height: 20px;
-  text-align: center;
-  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "黑体", "Microsoft YaHei", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
-  font-size: 16px;
-  color: #505050;
-}
-
-div.course-top {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 42px;
-  height: 42px;
-  box-shadow: 2px 2px 5px #d3d3d3;
-  line-height: 19px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 12px;
-  background-color: #f0f0f0;
-  z-index: 100;
-  cursor: pointer;
-  opacity: 0.9;
-  transition: 0.2s;
-}
-
-div.course-top:hover {
-  box-shadow: 5px 5px 8px #d3d3d3;
-  background-color: #e4e4e4;
-  opacity: 1;
-}
-
-div.bookmark {
-  position: fixed;
-  top: 120px;
-  bottom: 100px;
-  left: 10px;
-  right: 20px;
-  width: 360px;
-  overflow: auto;
-  text-align: left;
-}
-
-div.bookmark div.accordian {
-  width: 332px;
-}
-
-div.bookmark div.accordian button.unfold {
-  width: 100%;
-  margin-left: 10px;
-  padding: 5px 14px 5px 14px;
-  border: solid 3px #ffffff;
-  outline: 0;
-  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "黑体", "Microsoft YaHei", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
-  font-size: 19px;
-  font-weight: bold;
-  text-align: left;
-  border-radius: 12px;
-  background-color: #f2f2f2;
-  opacity: 0.9;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-div.bookmark div.accordian button.unfold:hover {
-  background-color: #fff8dc;
-  opacity: 1;
-}
-
-div.bookmark div.accordian button.unfold.active {
-  background-color: #d8d8d8;
-}
-
-div.bookmark div.accordian button.unfold.active:hover {
-  background-color: #fff8dc;
-  opacity: 1;
-}
-
-div.bookmark div.accordian div.toggle {
-  max-height: 0;
-  padding-left: 10px;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-div.bookmark div.accordian div.toggle ol {
-  padding-left: 40px;
-  font-family: "Times New Roman", Times, serif, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "黑体", "Microsoft YaHei", "Microsoft YaHei", "微软雅黑", "WenQuanYi Micro Hei";
-  font-size: 18px;
-  color: #505050;
-}
-
-div.bookmark div.accordian div.toggle ol li {
-  padding: 5px 10px 5px 10px;
-  border: solid 3px #ffffff;
-  border-radius: 12px;
-  background-color: #f6f6f6;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-div.bookmark div.accordian div.toggle ol li:hover {
-  background-color: #fff8dc;
-}
-
-div.note-body {
-  position: absolute;
-  top: 0;
-  bottom: 20px;
-  left: 380px;
-  right: 0;
 }
