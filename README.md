@@ -1,4 +1,4 @@
-# homepage-jose
+# Homepage of Jose Hu
 
 ![](https://img.shields.io/github/languages/count/hgz12345ssdlh/homepage-jose?color=light-green)
 ![](https://img.shields.io/github/languages/top/hgz12345ssdlh/homepage-jose?color=orange)
