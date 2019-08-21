@@ -369,6 +369,7 @@ footer .timestamp a {
   left: 0;
   width: 100%;
   height: 120px;
+  margin-top: 10px;
 }
 
 #cv #cv-head #py-name {
@@ -444,8 +445,8 @@ footer .timestamp a {
 }
 
 #cv #cv-introduction {
-  position: relative;   /* Make 120px room for #cv-head. */
-  top: 120px;
+  position: relative;   /* Make 130px room for #cv-head. */
+  top: 130px;
 }
 
 #cv #cv-introduction p {
@@ -466,8 +467,8 @@ footer .timestamp a {
 }
 
 #cv #cv-skills {
-  position: relative;   /* Make 120px room for #cv-head, then shrink 10px for first p of intro. */
-  top: 110px;
+  position: relative;   /* Make 130px room for #cv-head, then shrink 10px for first p of intro. */
+  top: 120px;
 }
 
 #cv #cv-skills table {
@@ -484,8 +485,8 @@ footer .timestamp a {
 }
 
 #cv #cv-contacts {
-  position: relative;   /* Make 120px room for #cv-head, then shrink 10px for first p of intro. */
-  top: 110px;
+  position: relative;   /* Make 130px room for #cv-head, then shrink 10px for first p of intro. */
+  top: 120px;
 }
 
 #cv #cv-contacts table th {
@@ -500,8 +501,9 @@ footer .timestamp a {
 }
 
 #cv #cv-links {
-  position: relative;   /* Make 120px room for #cv-head, then shrink 10px for first p of intro. */
-  top: 110px;
+  position: relative;   /* Make 130px room for #cv-head, then shrink 10px for first p of intro. */
+  top: 120px;
+  margin-bottom: 10px;
 }
 
 #cv #cv-links #links-logo-area {
