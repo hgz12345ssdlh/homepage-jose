@@ -484,6 +484,17 @@ footer .timestamp a {
   font-weight: bold;
 }
 
+#cv #cv-skills #knowledge-graph {
+  text-align: center;
+  width: 98%;
+}
+
+#cv #cv-skills #knowledge-graph img {
+  vertical-align: middle;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
 #cv #cv-contacts {
   position: relative;   /* Make 130px room for #cv-head, then shrink 10px for first p of intro. */
   top: 120px;
